@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: match-engine-monitor
+  name: {{ .Values.name }}
   namespace: {{ .Values.name }}
 
 spec:

@@ -1,6 +1,6 @@
 image: 
   repository: 270863875638.dkr.ecr.us-east-1.amazonaws.com/go-engine
   tag: v1.1
-replicas: 2
+replicas: 9
 namespace: go-engine
 name: go-engine
