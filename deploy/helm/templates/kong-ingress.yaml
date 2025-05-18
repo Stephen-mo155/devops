@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: match-engine-monitor-ingress
-  namespace: default
+  name: {{ .Values.name }}-ingress
+  namespace: {{ .Values.namespace }}
   annotations:
     konghq.com/strip-path: "false"
 spec:
@@ -14,7 +14,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: match-engine-monitor
+            name: {{ .Values.name }}
             port:
               number: 8080
 

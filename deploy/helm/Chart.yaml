@@ -1,0 +1,5 @@
+apiVersion: v1
+name: go-engine
+description: A go-engine Helm chart for EKS
+version: 0.1.0
+appVersion: "v1"
